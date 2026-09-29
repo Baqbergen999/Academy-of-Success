@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Light Glassmorphic and Luxury Card styling */
+.light-glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.light-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.light-card-hover:hover {
+  border-color: rgba(30, 58, 138, 0.3);
+  box-shadow: 0 20px 35px -10px rgba(30, 58, 138, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Custom light scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
